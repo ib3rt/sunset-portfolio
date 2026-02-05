@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore my portfolio of digital art, photography, illustrations, and graphic design. Filter by category or browse all creative work.">
+  <title>Work | Artist Name - Sunset Art Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100'><defs><linearGradient id='g' x1='0%' x2='100%'><stop offset='0%' stop-color='%23FFD700'/><stop offset='50%' stop-color='%23FF6B35'/><stop offset='100%' stop-color='%23C71585'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50%' y='55%' text-anchor='middle' font-size='50' fill='white'>A</text></svg>">
+</head>
+<body>
+  <a href="#main-content" class="visually-hidden">Skip to main content</a>
+  
+  <header class="site-header scrolled" id="header">
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-brand" aria-label="Artist Name Home">
+        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFD700"/>
+              <stop offset="50%" stop-color="#FF6B35"/>
+              <stop offset="100%" stop-color="#C71585"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="20" fill="url(#logoGradient)"/>
+          <text x="50" y="65" text-anchor="middle" font-size="50" font-family="Georgia" font-weight="bold" fill="white">A</text>
+        </svg>
+        <span>ARTIST NAME</span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="projects.html" aria-current="page">Work</a>
+          <ul class="nav-dropdown">
+            <li><a href="projects.html">All Work</a></li>
+            <li><a href="projects.html?category=digital-art">Digital Art</a></li>
+            <li><a href="projects.html?category=photography">Photography</a></li>
+            <li><a href="projects.html?category=illustrations">Illustrations</a></li>
+            <li><a href="projects.html?category=graphic-design">Graphic Design</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <a href="contact.html" class="nav-cta">Work With Me</a>
+      
+      <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+  
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero-background">
+        <div class="hero-gradient" style="opacity: 0.9;"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="line">My Work</span>
+        </h1>
+        <p class="hero-subtitle">
+          A collection of projects spanning digital art, photography, illustrations, and graphic design.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="section" aria-labelledby="projectsTitle">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <h2 id="projectsTitle" class="section-title text-gradient">All Projects</h2>
+          <p class="section-subtitle">
+            Filter by category or explore the complete portfolio.
+          </p>
+        </header>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons reveal-on-scroll" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Work</button>
+          <button class="filter-btn" data-filter="digital-art" aria-pressed="false">Digital Art</button>
+          <button class="filter-btn" data-filter="photography" aria-pressed="false">Photography</button>
+          <button class="filter-btn" data-filter="illustrations" aria-pressed="false">Illustrations</button>
+          <button class="filter-btn" data-filter="graphic-design" aria-pressed="false">Graphic Design</button>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid" role="list" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card reveal-on-scroll" data-category="digital-art" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Golden Hour Dreams"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art1/800/600" 
+                   alt="Golden Hour Dreams - Digital artwork with warm sunset colors"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Golden Hour Dreams</h3>
+              <p class="project-category">Digital Art</p>
+            </div>
+          </article>
+          
+          <!-- Project 2 -->
+          <article class="project-card reveal-on-scroll" data-category="photography" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Twilight Serenade"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art2/800/600" 
+                   alt="Twilight Serenade - Photography at blue hour"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Twilight Serenade</h3>
+              <p class="project-category">Photography</p>
+            </div>
+          </article>
+          
+          <!-- Project 3 -->
+          <article class="project-card reveal-on-scroll" data-category="illustrations" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Coral Reefs"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art3/800/600" 
+                   alt="Coral Reefs - Digital illustration series"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Coral Reefs</h3>
+              <p class="project-category">Illustrations</p>
+            </div>
+          </article>
+          
+          <!-- Project 4 -->
+          <article class="project-card reveal-on-scroll" data-category="graphic-design" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Sunset Co. Brand"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art4/800/600" 
+                   alt="Sunset Co. Brand Identity"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Sunset Co. Brand</h3>
+              <p class="project-category">Graphic Design</p>
+            </div>
+          </article>
+          
+          <!-- Project 5 -->
+          <article class="project-card reveal-on-scroll" data-category="digital-art" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Nebula Dreams"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art5/800/600" 
+                   alt="Nebula Dreams - Cosmic digital art"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Nebula Dreams</h3>
+              <p class="project-category">Digital Art</p>
+            </div>
+          </article>
+          
+          <!-- Project 6 -->
+          <article class="project-card reveal-on-scroll" data-category="photography" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Urban Sunsets"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art6/800/600" 
+                   alt="Urban Sunsets - City photography series"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Urban Sunsets</h3>
+              <p class="project-category">Photography</p>
+            </div>
+          </article>
+          
+          <!-- Project 7 -->
+          <article class="project-card reveal-on-scroll" data-category="illustrations" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Forest Spirits"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art7/800/600" 
+                   alt="Forest Spirits - Fantasy illustrations"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Forest Spirits</h3>
+              <p class="project-category">Illustrations</p>
+            </div>
+          </article>
+          
+          <!-- Project 8 -->
+          <article class="project-card reveal-on-scroll" data-category="graphic-design" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Festival Posters"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art8/800/600" 
+                   alt="Music Festival Posters - Event graphics"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Festival Posters</h3>
+              <p class="project-category">Graphic Design</p>
+            </div>
+          </article>
+          
+          <!-- Project 9 -->
+          <article class="project-card reveal-on-scroll" data-category="digital-art" role="listitem">
+            <a href="project-detail.html" class="project-link" aria-label="View Fluid Dreams"></a>
+            <div class="project-image">
+              <img src="https://picsum.photos/seed/art9/800/600" 
+                   alt="Fluid Dreams - Abstract digital art"
+                   loading="lazy" class="lazy">
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">Fluid Dreams</h3>
+              <p class="project-category">Digital Art</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section" aria-labelledby="ctaTitle" style="background: var(--gradient-sunset); text-align: center; color: white;">
+      <div class="container reveal-on-scroll">
+        <h2 id="ctaTitle" class="section-title" style="color: white;">Have a Project in Mind?</h2>
+        <p style="max-width: 600px; margin: 0 auto var(--space-xl); opacity: 0.9;">
+          I'd love to hear about your project and explore how we can work together.
+        </p>
+        <a href="contact.html" class="btn" style="background: white; color: var(--sunset-orange);">Let's Talk</a>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <div class="footer-column">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="projects.html?category=digital-art">Digital Art</a></li>
+          <li><a href="projects.html?category=photography">Photography</a></li>
+          <li><a href="projects.html?category=illustrations">Illustrations</a></li>
+          <li><a href="projects.html?category=graphic-design">Graphic Design</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Work With Me</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Behance</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column newsletter">
+        <h4>Stay Updated</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502-11.084.734.831-7.91 9.298L5.51 2.25H1.2l7.73 10.132L1.2 22.5h3.308l7.068-8.319-7.232 8.767.734-.831L9.51 22.5h3.308l-7.308-9.985L18.244 2.25z"/></svg></a>
+          <a href="#" aria-label="Behance"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.787-1.632-5.787-5.812s2.713-5.812 5.787-5.812c3.072 0 4.956 1.297 5.787 5.812.012 1.262.012 2.698.012 4.151 0 1.262-.012 2.651-.012 4.151zm-10.508-10.955c-.24-.951-1.012-1.909-2.837-1.909-2.807 0-4.785 1.919-4.785 4.855 0 2.936 1.978 4.855 4.785 4.855 1.912 0 3.601-1.024 4.381-2.811h-2.733c-.6 1.166-1.914 1.937-3.649 1.937-2.332 0-3.651-1.537-3.651-3.732 0-2.195 1.319-3.732 3.651-3.732 1.812 0 3.124 1.012 3.688 2.486h2.652c-.724-1.684-2.376-2.727-4.508-2.727zm-.826-4.155h4.227c.956 0 1.652.651 1.652 1.705 0 1.054-.696 1.705-1.652 1.705h-4.227v-3.41z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Artist Name. All rights reserved.</p>
+      <p style="margin-top: var(--space-sm); opacity: 0.7);">
+        Designed with <span aria-label="love" style="color: var(--sunset-pink);">♥</span> and created with <a href="#" style="color: var(--sunset-gold);">OpenClaw</a>
+      </p>
+    </div>
+  </footer>
+  
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </svg>
+  </button>
+  
+  <script src="js/main.js" defer></script>
+</body>
+</html>
